@@ -2,13 +2,13 @@ import React from "react";
 
 const About = () => {
   return (
-    <div id='about' className='flex flex-col gap-y-4'>
+    <div id='about' className='flex flex-col gap-y-4 mb-8'>
       <div className="flex flex-col mobile:flex-row gap-x-4">
         <div className="flex-1">
           <img src='/my_image.jpg' alt='My Image' className="rounded"/>
         </div>
         <div className='flex flex-col flex-[2_1_0%] justify-evenly'>
-          <p>
+          <p className="text-sm md:text-base">
             A Software Developer with 4 years of experience in SASS Products.
             Developed numerous functionalities to ease the end users interactions
             with the product. A dedicated professional who is passionate about
@@ -24,7 +24,7 @@ const About = () => {
           </a>
         </div>
       </div>
-      <div>
+      <div className="text-sm md:text-base">
           <h4>Skills</h4>
           <ul className='list-disc ml-4'>
             <li>Spring Boot</li>

@@ -3,18 +3,18 @@ import React from "react";
 
 const HomeContent = () => {
   return (
-    <div className='mt-12' id="home">
-      <section>
-        <h1 className='font-semibold text-3xl'>
+    <div className='mt-12 mb-8' id="home">
+      <section className="mb-2">
+        <h1 className='font-semibold text-xl md:text-2xl xl:text-3xl'>
           Full Stack Developer.<i className='not-italic'>👋🏼</i>
         </h1>
-        <p className='text-gray-500 text-xl'>
+        <p className='text-gray-500 text-sm md:text-lg xl:text-xl'>
           Hi, I'm Sanjai Kumar Alagarsamy. I'm from a city that never
           sleeps(Thoonga nagaram) called Madurai📍.
         </p>
         {/* <img src='/3d_man_image.jpg' alt='LinkedIn' style={{width: '30rem', height: '20rem'}} /> */}
       </section>
-      <section className='flex gap-x-3'>
+      <section className='flex gap-x-3 mb-2'>
         <a href='https://www.linkedin.com/in/sanjai-kumar' target='_blank'>
           <Image
             src='/linkedin.png'
@@ -34,9 +34,9 @@ const HomeContent = () => {
           />
         </a>
       </section>
-      <section className='flex items-center gap-x-3'>
-        <i className="not-italic text-gray-500 mt-1">Tech Stacks:</i>
-        <div className='flex gap-x-3'>
+      <section className='flex flex-col md:flex-row md:items-center'>
+        <i className="not-italic text-gray-500 mt-1 text-sm md:text-base">Tech Stacks:</i>
+        <div className='flex gap-x-4 gap-y-4 flex-[3_1_0] justify-evenly flex-wrap'>
           <img
             src='/java.png'
             title='Java'
@@ -88,7 +88,6 @@ const HomeContent = () => {
           />
         </div>
       </section>
-      <hr/>
     </div>
   );
 };

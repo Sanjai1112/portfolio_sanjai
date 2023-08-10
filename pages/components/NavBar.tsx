@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <nav className='grid grid-cols-2 items-baseline font-semibold'>
+    <nav className='grid grid-cols-2 items-baseline font-semibold text-sm md:text-base'>
       <h1 className='cursor-pointer justify-self-start'><a href="#home">Sanjai.dev</a></h1>
       <div className='justify-self-end mobile:hidden'>
         <button
