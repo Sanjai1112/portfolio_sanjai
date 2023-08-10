@@ -3,7 +3,7 @@ import React from "react";
 
 const HomeContent = () => {
   return (
-    <div className='mt-12'>
+    <div className='mt-12' id="home">
       <section>
         <h1 className='font-semibold text-3xl'>
           Full Stack Developer.<i className='not-italic'>👋🏼</i>
