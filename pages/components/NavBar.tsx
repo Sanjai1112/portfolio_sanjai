@@ -3,9 +3,11 @@ import React, { useState } from "react";
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <nav className='grid grid-cols-2 items-baseline font-semibold text-sm md:text-base'>
-      <h1 className='cursor-pointer justify-self-start'><a href="#home">Sanjai.dev</a></h1>
-      <div className='justify-self-end mobile:hidden'>
+    <nav className='grid grid-cols-[120px_auto] items-baseline font-semibold text-sm min-[850px]:text-base sticky top-0 z-50 py-1 px-4 rounded text-slate-900 bg-slate-50/90 backdrop-blur-sm ring-1 ring-slate-900/10'>
+      <h1 className='cursor-pointer justify-self-start'>
+        <a href='#home'>Sanjai.dev</a>
+      </h1>
+      <div className='justify-self-end md:hidden'>
         <button
           onClick={() => setIsOpen(!isOpen)}
           className='flex items-center px-3 py-2 rounded text-black-500 hover:text-black-400'
@@ -26,11 +28,26 @@ const NavBar = () => {
           </svg>
         </button>
       </div>
-      <ul className={`absolute right-1.5 mt-10 ${isOpen ? 'block' : 'hidden'} mobile:mt-0 mobile:relative mobile:grid mobile:grid-cols-4 mobile:justify-self-auto mobile:gap-x-4`}>
-        <li className='cursor-pointer justify-self-start'><a href="#home">Home</a></li>
-        <li className='cursor-pointer justify-self-start'><a href="#about">About</a></li>
-        <li className='cursor-pointer justify-self-start'><a href="#works">Works</a></li>
-        <li className='cursor-pointer justify-self-start'><a href="#contact">Contact</a></li>
+      <ul
+        className={`absolute right-1.5 mt-10 ${
+          isOpen ? "block" : "hidden"
+        } md:mt-0 md:relative md:grid md:grid-cols-5 md:gap-x-4 justify-self-end`}
+      >
+        <li className='cursor-pointer justify-self-start'>
+          <a href='#home'>Home</a>
+        </li>
+        <li className='cursor-pointer justify-self-start'>
+          <a href='#about'>About</a>
+        </li>
+        <li className='cursor-pointer justify-self-start'>
+          <a href='#works'>Works</a>
+        </li>
+        <li className='cursor-pointer justify-self-start'>
+          <a href='#projects'>Projects</a>
+        </li>
+        <li className='cursor-pointer justify-self-start'>
+          <a href='#contact'>Contact</a>
+        </li>
       </ul>
     </nav>
   );
