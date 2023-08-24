@@ -16,7 +16,7 @@ const About = () => {
             software solutions.
           </p>
           <div className='text-sm md:text-base hidden xl:block'>
-            <h4 className='underline text-slate-500'>Skills:</h4>
+            <h4 className='text-slate-500'>Skills:</h4>
             <ul className='list-disc ml-4'>
               <li>Spring Boot</li>
               <li>Java Servlet and JSP</li>
@@ -46,13 +46,28 @@ const About = () => {
       </div>
       <div className='text-sm md:text-base xl:hidden px-4'>
         <p>
-          <span className='underline text-slate-500 mr-4'>Skills:</span>
+          <span className='text-slate-500 mr-4'>Skills:</span>
           Spring Boot &middot; Java Servlet and JSP &middot; ReactJs &middot;
           NextJs &middot; NodeJs &middot; JavaScript HTML5 &middot; CSS3
           &middot; PostgreSQL &middot; MongoDB &middot; Apache Kafka &middot;
           Redis Cache &middot; Reactive Programming &middot; Git
         </p>
         <ul className='list-disc ml-4'></ul>
+      </div>
+      <h1 className=" text-slate-500">My Coding platforms:</h1>
+      <div className="flex justify-around">
+        <a href="https://leetcode.com/sanjaialagar/" target="_blank" className="flex flex-col items-center gap-y-2">
+          <img src="/LeetCode.png" alt="LeetCode" title="LeetCode" className="w-10"/>
+          <h2 className="text-sm">LeetCode</h2>
+        </a>
+        <a href="https://app.codesignal.com/profile/sanjai_a" target="_blank" className="flex flex-col items-center gap-y-2">
+          <img src="/codesignal.png" alt="CodeSignal" title="CodeSignal" className="w-12"/>
+          <h2 className="text-sm">CodeSignal</h2>
+        </a>
+        <a href="https://www.hackerrank.com/sanjaikumar4773" target="_blank" className="flex flex-col items-center gap-y-2">
+          <img src="/hackerrank.png" alt="HackerRank" title="HackerRank" className="w-10"/>
+          <h2 className="text-sm">HackerRank</h2>
+        </a>
       </div>
     </div>
   );

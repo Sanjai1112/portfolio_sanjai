@@ -35,7 +35,7 @@ const HomeContent = () => {
         </a>
       </section>
       <section className='flex flex-col md:flex-row md:items-center'>
-        <i className="not-italic text-gray-500 mt-1 text-sm md:text-base underline">Tech Stacks:</i>
+        <i className="not-italic text-gray-500 mt-1 text-sm md:text-base">Tech Stacks:</i>
         <div className='flex gap-x-4 gap-y-4 flex-[3_1_0] justify-evenly flex-wrap'>
           <img
             src='/java.png'

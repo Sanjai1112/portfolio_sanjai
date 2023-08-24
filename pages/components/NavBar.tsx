@@ -42,9 +42,9 @@ const NavBar = () => {
         <li className='cursor-pointer justify-self-start'>
           <a href='#works'>Works</a>
         </li>
-        <li className='cursor-pointer justify-self-start'>
+        {/* <li className='cursor-pointer justify-self-start'>
           <a href='#projects'>Projects</a>
-        </li>
+        </li> */}
         <li className='cursor-pointer justify-self-start'>
           <a href='#contact'>Contact</a>
         </li>
