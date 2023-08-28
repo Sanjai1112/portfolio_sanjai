@@ -2,7 +2,7 @@ import React from "react";
 
 const Works = () => {
   return (
-    <main className='relative min-h-screen flex flex-col justify-center bg-slate-50 overflow-hidden mb-8' id="works">
+    <main className='relative min-h-screen flex flex-col justify-center overflow-hidden mb-8' id="works">
       <div className='w-full max-w-6xl mx-auto px-4 md:px-6'>
         <div className='flex flex-col justify-center'>
           <div className='w-full max-w-3xl mx-auto'>

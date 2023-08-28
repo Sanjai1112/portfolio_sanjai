@@ -1,11 +1,12 @@
 import React from "react";
+import Image from "next/image";
 
 const About = () => {
   return (
     <div id='about' className='flex flex-col gap-y-4 mb-8'>
       <div className='flex flex-col mobile:flex-row gap-y-4 md:gap-x-12'>
         <div className='flex-1 w-80 self-center mobile:w-full'>
-          <img src='/my_image.jpg' alt='My Image' className='rounded' />
+          <Image src='/my_image.jpg' alt='My Image' className='rounded' width='466' height='555'/>
         </div>
         <div className='flex flex-col flex-[2_1_0%] justify-evenly gap-y-4 px-4'>
           <p className='text-sm md:text-base'>
@@ -57,15 +58,15 @@ const About = () => {
       <h1 className=" text-slate-500">My Coding platforms:</h1>
       <div className="flex justify-around">
         <a href="https://leetcode.com/sanjaialagar/" target="_blank" className="flex flex-col items-center gap-y-2">
-          <img src="/LeetCode.png" alt="LeetCode" title="LeetCode" className="w-10"/>
+          <Image src="/LeetCode.png" alt="LeetCode" title="LeetCode" width="40" height="100"/>
           <h2 className="text-sm">LeetCode</h2>
         </a>
         <a href="https://app.codesignal.com/profile/sanjai_a" target="_blank" className="flex flex-col items-center gap-y-2">
-          <img src="/codesignal.png" alt="CodeSignal" title="CodeSignal" className="w-12"/>
+          <Image src="/codesignal.png" alt="CodeSignal" title="CodeSignal" width="48" height="100"/>
           <h2 className="text-sm">CodeSignal</h2>
         </a>
         <a href="https://www.hackerrank.com/sanjaikumar4773" target="_blank" className="flex flex-col items-center gap-y-2">
-          <img src="/hackerrank.png" alt="HackerRank" title="HackerRank" className="w-10"/>
+          <Image src="/hackerrank.png" alt="HackerRank" title="HackerRank" width="40" height="100"/>
           <h2 className="text-sm">HackerRank</h2>
         </a>
       </div>
