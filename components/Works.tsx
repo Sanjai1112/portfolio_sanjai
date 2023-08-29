@@ -1,6 +1,6 @@
 import React from "react";
 
-const Works = () => {
+const Works = (): JSX.Element => {
   return (
     <main className='relative min-h-screen flex flex-col justify-center overflow-hidden mb-8' id="works">
       <div className='w-full max-w-6xl mx-auto px-4 md:px-6'>

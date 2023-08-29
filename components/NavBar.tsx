@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const NavBar = () => {
+const NavBar = (): JSX.Element => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <nav className='grid grid-cols-[120px_auto] items-baseline font-semibold text-sm min-[850px]:text-base sticky top-0 z-50 py-1 px-4 rounded text-slate-900 bg-slate-50/90 backdrop-blur-sm ring-1 ring-slate-900/10'>

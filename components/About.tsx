@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-const About = () => {
+const About = (): JSX.Element => {
   return (
     <div id='about' className='flex flex-col gap-y-4 mb-8'>
       <div className='flex flex-col mobile:flex-row gap-y-4 md:gap-x-12'>

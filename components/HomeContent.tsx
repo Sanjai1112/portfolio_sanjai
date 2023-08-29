@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-const HomeContent = () => {
+const HomeContent = (): JSX.Element => {
   return (
     <div className='mt-12 mb-8' id='home'>
       <section className='mb-2'>
