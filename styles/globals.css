@@ -25,13 +25,3 @@ body {
     )
     rgb(var(--background-start-rgb));
 } */
-
-
-.contact p {
-  color: #bf1650;
-}
-
-.contact p::before {
-  display: inline;
-  content: "⚠ ";
-}
