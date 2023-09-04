@@ -41,19 +41,19 @@ const NavBar = (): JSX.Element => {
         } md:relative md:grid md:grid-cols-5 md:gap-x-4 justify-self-end`}
       >
         <li className='cursor-pointer justify-self-start' onClick={closeNavIfOpened}>
-          <a href='#home'>Home</a>
+          <a href='#home' className="inline-block w-full">Home</a>
         </li>
         <li className='cursor-pointer justify-self-start' onClick={closeNavIfOpened}>
-          <a href='#about'>About</a>
+          <a href='#about' className="inline-block w-full">About</a>
         </li>
         <li className='cursor-pointer justify-self-start' onClick={closeNavIfOpened}>
-          <a href='#works'>Works</a>
+          <a href='#works' className="inline-block w-full">Works</a>
         </li>
         {/* <li className='cursor-pointer justify-self-start' onClick={closeNavIfOpened}>
-          <a href='#projects'>Projects</a>
+          <a href='#projects' className="inline-block">Projects</a>
         </li> */}
         <li className='cursor-pointer justify-self-start' onClick={closeNavIfOpened}>
-          <a href='#contact'>Contact</a>
+          <a href='#contact' className="inline-block w-full">Contact</a>
         </li>
       </ul>
     </nav>
