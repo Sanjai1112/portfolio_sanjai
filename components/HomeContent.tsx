@@ -1,20 +1,42 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
-
+type Opacity = {
+  opacity: number;
+}
 const HomeContent = (): JSX.Element => {
+  const [titleH1, setTitleH1] = useState<Opacity>({opacity: 0});
+  const [inforPara, setInfoPara] = useState<Opacity>({opacity: 0});
+  const [socialLinks, setSocialLinks] = useState<Opacity>({opacity: 0});
+
+  useEffect(() => {
+    const id1 = setTimeout(() => {
+      setTitleH1({opacity: 1});
+    }, 150);
+    
+    const id2 = setTimeout(() => {
+      setInfoPara({opacity: 1});
+      setSocialLinks({opacity: 1});
+    }, 450);
+
+    return () => {
+      clearTimeout(id1);
+      clearTimeout(id2);
+    }
+  },[]);
+
   return (
-    <div className='mt-12 mb-8' id='home'>
-      <section className='mb-2'>
-        <h1 className='font-semibold text-xl md:text-2xl xl:text-3xl'>
+    <section className='mt-12 mb-8' id='home'>
+      <div className='mb-2'>
+        <h1 className='font-semibold text-xl md:text-2xl xl:text-3xl transition-opacity' style={titleH1}>
           Full Stack Developer.<i className='not-italic'>👋🏼</i>
         </h1>
-        <p className='text-gray-500 text-sm md:text-lg xl:text-xl'>
+        <p className='text-gray-600 text-sm md:text-lg xl:text-xl transition-opacity' style={inforPara}>
           Hi, I'm Sanjai Kumar Alagarsamy. I'm from a city that never
           sleeps(Thoonga nagaram) called Madurai📍.
         </p>
         {/* <Image src='/3d_man_image.jpg' alt='LinkedIn' width='100' height='100' /> */}
-      </section>
-      <section className='flex gap-x-3 mb-2'>
+      </div>
+      <div className='flex gap-x-3 mb-2 transition-opacity' style={socialLinks}>
         <a href='https://www.linkedin.com/in/sanjai-kumar' target='_blank'>
           <Image
             src='/linkedin.png'
@@ -33,12 +55,12 @@ const HomeContent = (): JSX.Element => {
             height='20'
           />
         </a>
-      </section>
-      <section className='flex flex-col md:flex-row md:items-center'>
+      </div>
+      <div className='flex flex-col md:flex-row md:items-center'>
         <i className='not-italic text-gray-500 mt-1 text-sm md:text-base'>
           Tech Stacks:
         </i>
-        <div className='flex gap-x-4 gap-y-4 flex-[3_1_0] justify-evenly flex-wrap'>
+        <div className='flex gap-x-8 gap-y-6 flex-[3_1_0] md:justify-evenly flex-wrap'>
           <Image
             src='/java.png'
             title='Java'
@@ -103,8 +125,8 @@ const HomeContent = (): JSX.Element => {
             height='40'
           />
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   );
 };
 

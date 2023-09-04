@@ -12,7 +12,7 @@ export default function App({ Component, pageProps }: AppProps) {
           content='Sanjai Alagar | Full Stack Developer'
           key='title'
         />
-        <link rel="icon" href="/dev.png" type="image/png" sizes="32x32"/>
+        <link rel="icon" href="/favico.png" type="image/png" sizes="32x32"/>
       </Head>
       <Component {...pageProps} />
     </>

@@ -131,9 +131,9 @@ const Contact = (): JSX.Element => {
   }
 
   return (
-    <div
+    <section
       id='contact'
-      className='contact flex flex-col mobile:flex-row gap-y-8 mobile:gap-x-8 justify-center relative'
+      className='contact flex flex-col mobile:flex-row gap-y-8 mobile:gap-x-8 justify-center relative mb-4'
     >
       {
         getToastElement()
@@ -183,6 +183,42 @@ const Contact = (): JSX.Element => {
       </form>
 
       <div className='flex flex-row  justify-center mobile:flex-col gap-x-4 mobile:gap-y-4'>
+        <a href='https://twitter.com/sanjaial_alagar' target='_blank'>
+          <Image
+            src={XTWITTER}
+            alt='Twitter / X'
+            width='20'
+            height='20'
+            title='Twitter / X'
+          />
+        </a>
+        <a href='https://github.com/sanjai1112' target='_blank'>
+          <Image
+            src='/github.png'
+            alt='Github'
+            width='20'
+            height='20'
+            title='Github'
+          />
+        </a>
+        <a href='https://www.linkedin.com/in/sanjai-kumar' target='_blank'>
+          <Image
+            src='/linkedin.png'
+            alt='LinkedIn'
+            width='20'
+            height='20'
+            title='LinkedIn'
+          />
+        </a>
+        <a href='mailto:sanjaikumar4773@gmail.com'>
+          <Image
+            src='/gmail.png'
+            alt='Gmail'
+            width='20'
+            height='20'
+            title='Gmail'
+          />
+        </a>
         <a
           href='https://www.instagram.com/sanjai_kumar_alagarsamy/'
           target='_blank'
@@ -195,26 +231,8 @@ const Contact = (): JSX.Element => {
             title='Instagram'
           />
         </a>
-        <a href='https://twitter.com/sanjaial_alagar' target='_blank'>
-          <Image
-            src={XTWITTER}
-            alt='Twitter / X'
-            width='20'
-            height='20'
-            title='Twitter / X'
-          />
-        </a>
-        <a href='https://www.linkedin.com/in/sanjai-kumar' target='_blank'>
-          <Image
-            src='/linkedin.png'
-            alt='LinkedIn'
-            width='20'
-            height='20'
-            title='LinkedIn'
-          />
-        </a>
       </div>
-    </div>
+    </section>
   );
 };
 

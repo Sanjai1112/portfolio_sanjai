@@ -2,8 +2,8 @@ import React from "react";
 
 const Works = (): JSX.Element => {
   return (
-    <main className='relative min-h-screen flex flex-col justify-center overflow-hidden mb-8' id="works">
-      <div className='w-full max-w-6xl mx-auto px-4 md:px-6'>
+    <section className='relative min-h-screen flex flex-col justify-center overflow-hidden mb-8' id="works">
+      <main className='w-full max-w-6xl mx-auto px-4 md:px-6'>
         <div className='flex flex-col justify-center'>
           <div className='w-full max-w-3xl mx-auto'>
             {/* Container */}
@@ -24,7 +24,7 @@ const Works = (): JSX.Element => {
                   </div>
                 </div>
                 {/* Content  */}
-                <div className='text-slate-500 text-xs md:text-sm lg:text-sm xl:text-base'>
+                <div className='text-gray-500 text-xs md:text-sm lg:text-sm xl:text-base'>
                   <p>
                     Worked in Various Micro Services and constructed many
                     RESTfull APIs to build robust features for product
@@ -60,7 +60,7 @@ const Works = (): JSX.Element => {
                   </div>
                 </div>
                 {/* Content  */}
-                <div className='text-slate-500 text-xs md:text-sm lg:text-sm xl:text-base'>
+                <div className='text-gray-500 text-xs md:text-sm lg:text-sm xl:text-base'>
                   <p>
                     Developed a web app for E-Mail Campaign to ease marketing
                     team sales target. Developed an analytical web app which
@@ -93,7 +93,7 @@ const Works = (): JSX.Element => {
                   </div>
                 </div>
                 {/* Content  */}
-                <div className='text-slate-500 text-xs md:text-sm lg:text-sm xl:text-base'>
+                <div className='text-gray-500 text-xs md:text-sm lg:text-sm xl:text-base'>
                   <p>
                     Worked as a internee in MERN stack and A-Frame to render 3D
                     objects in browsers to show all perspective views of an
@@ -110,8 +110,8 @@ const Works = (): JSX.Element => {
             </div>
           </div>
         </div>
-      </div>
-    </main>
+      </main>
+    </section>
   );
 };
 
