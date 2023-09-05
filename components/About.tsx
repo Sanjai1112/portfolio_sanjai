@@ -22,7 +22,7 @@ const About = (): JSX.Element => {
         </div>
         <div className='flex flex-col flex-[2_1_0%] justify-evenly gap-y-4 transition-opacity' style={intro}>
           <p className='text-sm md:text-base'>
-            A Software Developer with 4 years of experience in SASS Products.
+            A Software Developer with 4 years of experience in SaaS Products.
             Developed numerous functionalities to ease the end users
             interactions with the product. A dedicated professional who is
             passionate about crafting robust, efficient, and user- friendly

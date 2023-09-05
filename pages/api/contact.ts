@@ -44,14 +44,22 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse<
   const mailData = {
     from: CONFIG_EMAIL_ACCOUNT,
     to: TO_EMAIL_ACCOUNT,
-    subject: `Message From ${req.body.name}`,
-    text: req.body.message,
-    html: `<div>${req.body.message}</div>`,
+    subject: `Message From ${req.body.email}`,
+    // text: `
+    //   Hi, I'm ${req.body.name},\n
+    //   \t${req.body.message}
+    // `,
+    html: `
+      <div> 
+        <div> Hi, I'm ${req.body.name}</div>
+        ${req.body.message}
+      </div>
+    `,
   };
   try {
     const info = await transporter.sendMail(mailData);
     res.status(200).json({
-      message: `Message delivered to ${info.accepted}`,
+      message: 'Message delivered successfully',
     });
   } catch(err) {
     res.status(500).json({

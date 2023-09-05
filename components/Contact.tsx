@@ -58,6 +58,7 @@ const Contact = (): JSX.Element => {
     register,
     handleSubmit,
     formState: { errors },
+    reset
   } = useForm<FormValues>({ resolver });
 
   const onSubmit = handleSubmit(async (data) => {
@@ -88,6 +89,7 @@ const Contact = (): JSX.Element => {
       setToastObj({type: 2, message: String(err)});
     } finally {
       setSendingMessage(false);
+      reset({name: '', email: '', message: ''});
       clearTimeout(id);
       setTimeout(() => {
         setToastObj(null);
@@ -145,7 +147,7 @@ const Contact = (): JSX.Element => {
         <input
           {...register("name")}
           placeholder='Your Name Please'
-          className='px-2 py-1  placeholder:italic outline-none border border-indigo-500 rounded-lg focus:scale-105 transition-transform'
+          className='px-2 py-1 placeholder:text-xs md:placeholder:text-sm placeholder:italic outline-none border border-indigo-500 rounded-lg focus:scale-105 transition-transform'
         />
         {errors?.name && (
           <p className="before:content-['⚠_'] before:text-lg text-red-700 text-xs">
@@ -156,7 +158,7 @@ const Contact = (): JSX.Element => {
           type='email'
           {...register("email")}
           placeholder='Your Email Please'
-          className='px-2 py-1 placeholder:italic outline-none border border-indigo-500 rounded-lg focus:scale-105 transition-transform'
+          className='px-2 py-1 placeholder:text-xs md:placeholder:text-sm placeholder:italic outline-none border border-indigo-500 rounded-lg focus:scale-105 transition-transform'
         />
         {errors?.email && (
           <p className="before:content-['⚠_'] before:text-lg text-red-700 text-xs">
@@ -168,7 +170,7 @@ const Contact = (): JSX.Element => {
           placeholder='Your Message Please'
           maxLength={200}
           spellCheck
-          className='px-2 py-1 placeholder:italic outline-none border border-indigo-500 rounded-lg focus:scale-105 transition-transform'
+          className='px-2 py-1 placeholder:text-xs md:placeholder:text-sm placeholder:italic outline-none border border-indigo-500 rounded-lg focus:scale-105 transition-transform'
         />
         {errors?.message && (
           <p className="before:content-['⚠_'] before:text-lg text-red-700 text-xs">
