@@ -2,14 +2,15 @@ import React from "react";
 
 const Works = (): JSX.Element => {
   return (
-    <section className='relative min-h-screen flex flex-col justify-center overflow-hidden mb-8' id="works">
+    <section className='relative min-h-screen overflow-hidden mb-8' id="works">
+      <h1 className=" text-gray-500 mb-4">My Works:</h1>
       <main className='w-full max-w-6xl mx-auto px-4 md:px-6'>
         <div className='flex flex-col justify-center'>
           <div className='w-full max-w-3xl mx-auto'>
             {/* Container */}
             <div>
               {/* Timeline Item */}
-              <div className='relative pl-8 lg:pl-32 py-6'>
+              <div className='relative pl-8 lg:pl-32 pb-6'>
                 {/* Purple label  */}
                 <div className='font-caveat font-medium md:text-lg lg:text-xl xl:text-2xl text-indigo-500 mb-1 lg:mb-0'>
                   Zumen Technologies
@@ -25,18 +26,39 @@ const Works = (): JSX.Element => {
                 </div>
                 {/* Content  */}
                 <div className='text-gray-500 text-xs md:text-sm lg:text-sm xl:text-base'>
-                  <p>
-                    Worked in Various Micro Services and constructed many
-                    RESTfull APIs to build robust features for product
-                    enhancements. Developed notable asynchronous modules using
-                    Apache Kafka and Redis Cache and Reactive Programming
-                    concepts to ease the user's non blocking activities and
-                    parallel processing of business logic. Developed a micro
-                    service which mainly integrates the product with external
-                    systems like ERP and PLM to read and write procurement data
-                    into the system based on client needs.
-                  </p>
-                  <p className="mt-2">
+                  <ul className="[&>*]:mb-1">
+                    <li>
+                      <em className="font-semibold">Engineered a Framework</em> for integration with <em className="font-bold">ERP and PLM</em> using <em className="font-bold">Reactive Programming</em>, which ease
+                      the core business processes between the systems.
+                    </li>
+                    <li>
+                      <em className="font-bold">Implemented a stream line</em> process using <em className="font-bold">Kafka and Redis</em> for orchestrating the application processes
+                      from <em className="font-bold">RFP to PO</em> for data from ERP dump.
+                    </li>
+                    <li>
+                      <em className="font-bold">Parallelised single threaded logic</em> to reduce the processing time of dumping quotations by <em className="font-bold">more than
+                        ∼50%</em>.
+                    </li>
+                    <li>
+                      <em className="font-bold">Developed a dynamic configurable quotation templates</em> with help of <em className="font-bold">Ag-Grid and PostgreSQL.</em>
+                    </li>
+                    <li>
+                      <em className="font-bold">Designed and Developed the front-end</em> for various modules using <em className="font-bold">React.js, Redux, AgGrid, AntDe-
+                        sign.</em>
+                    </li>
+                    <li>
+                      <em className="font-bold">Designed and Developed various RESTful APIs</em> to build robust features for product enhancements.
+                    </li>
+                    <li>
+                      <em className="font-bold">Collaborated</em> with product managers, customers, and customer success team <em className="font-bold">to design and incorporate
+                        features that addressed customer pain points.</em>
+                    </li>
+                    <li>
+                      <em className="font-bold">Ensured code quality</em> by code reviews and <em className="font-bold">improved test coverage by writing unit and integration
+                        tests.</em> Nurtured junior developers via <em className="font-bold">knowledge transfer.</em>
+                    </li>
+                  </ul>
+                  <p className="mt-4">
                     <i className="not-italic font-semibold">Skills:</i> Microservices &middot; Spring Boot &middot;
                     ReactJs &middot; Redux &middot; PostgreSql &middot; MongoDB
                     &middot; Apache Kafka &middot; Redis &middot; REST API'S
@@ -61,17 +83,14 @@ const Works = (): JSX.Element => {
                 </div>
                 {/* Content  */}
                 <div className='text-gray-500 text-xs md:text-sm lg:text-sm xl:text-base'>
-                  <p>
-                    Developed a web app for E-Mail Campaign to ease marketing
-                    team sales target. Developed an analytical web app which
-                    provides detail representation of leads and customers and
-                    customers generated via which funneling process for a
-                    marketing team by integrating Zoho CRM. Developed a web app
-                    to view revenue details generated from a campaign and
-                    amounts spent for campaign by integrating Zoho CRM and
-                    Google Adsense.
-                  </p>
-                  <p className="mt-2">
+                  <ul className="[&>*]:mb-1">
+                    <li><em className="font-bold">Engineered an analytical platform</em> to find <em className="font-bold">various types of leads</em> like cross sell leads with help of Zoho
+                      CRM.</li>
+                    <li><em className="font-bold">Designed and Developed</em> modules in <em className="font-bold">email campaign service by integrating with Zoho CRM.</em></li>
+                    <li><em className="font-bold">Developed a tool</em> to track <em className="font-bold">Google AdWords</em> which helped in <em className="font-bold">earch Engine Marketing and increased
+                      sales.</em></li>
+                  </ul>
+                  <p className="mt-4">
                     <i className="not-italic font-semibold">Skills:</i> Core Java &middot; Servlets &middot;
                     PostgreSQL &middot; XML &middot; HTML5 &middot; Javascript
                     &middot; Semantic UI &middot; Bootstrap.
@@ -94,13 +113,12 @@ const Works = (): JSX.Element => {
                 </div>
                 {/* Content  */}
                 <div className='text-gray-500 text-xs md:text-sm lg:text-sm xl:text-base'>
-                  <p>
-                    Worked as a internee in MERN stack and A-Frame to render 3D
-                    objects in browsers to show all perspective views of an
-                    object for end user/customer who want to embed that object
-                    in their site in AR perspective.
-                  </p>
-                  <p className="mt-2">
+                  <ul className="[&>*]:mb-1">
+                    <li><em className="font-bold">Worked in MERN stack and A-Frame in No-code 3D development platform</em> which allowed e-commerce
+                      businesses to develop and embed a augmented view of items in their site.</li>
+                    <li><em className="font-bold">Worked in both bug fixing and manual testing</em> of certain modules of the product.</li>
+                  </ul>
+                  <p className="mt-4">
                     <i className="not-italic font-semibold">Skills:</i> Redux.js &middot; REST APIs &middot; A-Frame
                     (Virtual Reality Framework) &middot; Node.js &middot;
                     React.js &middot; MongoDB.
