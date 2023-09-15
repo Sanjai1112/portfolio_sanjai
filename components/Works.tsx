@@ -26,7 +26,7 @@ const Works = (): JSX.Element => {
                 </div>
                 {/* Content  */}
                 <div className='text-gray-500 text-xs md:text-sm lg:text-sm xl:text-base'>
-                  <ul className="[&>*]:mb-1">
+                  <ul className="[&>*]:mb-2">
                     <li>
                       <em className="font-semibold">Engineered a Framework</em> for integration with <em className="font-bold">ERP and PLM</em> using <em className="font-bold">Reactive Programming</em>, which ease
                       the core business processes between the systems.
@@ -82,7 +82,7 @@ const Works = (): JSX.Element => {
                 </div>
                 {/* Content  */}
                 <div className='text-gray-500 text-xs md:text-sm lg:text-sm xl:text-base'>
-                  <ul className="[&>*]:mb-1">
+                  <ul className="[&>*]:mb-2">
                     <li><em className="font-bold">Engineered an analytical platform</em> to find <em className="font-bold">various types of leads</em> like cross sell leads with help of Zoho
                       CRM.</li>
                     <li><em className="font-bold">Designed and Developed</em> modules in <em className="font-bold">email campaign service by integrating with Zoho CRM.</em></li>
@@ -112,7 +112,7 @@ const Works = (): JSX.Element => {
                 </div>
                 {/* Content  */}
                 <div className='text-gray-500 text-xs md:text-sm lg:text-sm xl:text-base'>
-                  <ul className="[&>*]:mb-1">
+                  <ul className="[&>*]:mb-2">
                     <li><em className="font-bold">Worked in MERN stack and A-Frame in No-code 3D development platform</em> which allowed e-commerce
                       businesses to develop and embed a augmented view of items in their site.</li>
                     <li><em className="font-bold">Worked in both bug fixing and manual testing</em> of certain modules of the product.</li>
