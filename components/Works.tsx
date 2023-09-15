@@ -43,8 +43,7 @@ const Works = (): JSX.Element => {
                       <em className="font-bold">Developed a dynamic configurable quotation templates</em> with help of <em className="font-bold">Ag-Grid and PostgreSQL.</em>
                     </li>
                     <li>
-                      <em className="font-bold">Designed and Developed the front-end</em> for various modules using <em className="font-bold">React.js, Redux, AgGrid, AntDe-
-                        sign.</em>
+                      <em className="font-bold">Designed and Developed the front-end</em> for various modules using <em className="font-bold">React.js, Redux, AgGrid, AntDesign.</em>
                     </li>
                     <li>
                       <em className="font-bold">Designed and Developed various RESTful APIs</em> to build robust features for product enhancements.
